@@ -14,8 +14,14 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Compile C program
-      run: gcc -Wall -Wextra -o program main.c
+- name: Compile all C files separately
+  run: |
+    for file in *.c; do
+      name=$(basename "$file" .c)
+      gcc -Wall -Wextra "$file" -o "$name"
+    done
+
+
 
     - name: Run the program
       run: ./program
