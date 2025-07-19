@@ -1,4 +1,4 @@
-Ans of 1
+
 
 #include<stdio.h>
 
