@@ -16,18 +16,18 @@ int main() {
 
     if (ch > num) {
 
-      printf("You guessed too high!");
+      printf("You guessed too high!\n");
 
     }
 
     else if (ch < num) {
 
-      printf("You guessed too low!");
+      printf("You guessed too low!\n");
 
     }
 
     else {
-      printf("Your guess is right!");
+      printf("Your guess is right!\n");
       break;
     }
   }
